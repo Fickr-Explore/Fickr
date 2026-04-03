@@ -7,30 +7,76 @@
     <style>
         :root { --primary: #000; --accent: #007aff; --bg: #ffffff; --text: #1d1d1f; }
         body { font-family: -apple-system, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        。header { background: #000; color: #fff; padding: 70px 20px; text-align: center; }
-        。container { max-width: 700px; margin: -40px auto 60px; background: #fff; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); padding: 40px; }
-        。section { margin-bottom: 30px; }
-        h2 { font-size: 24px; border-bottom: 1px solid #eee; padding-bottom: 12px; margin-bottom: 20px; }
-        。card { background: #f5f5f7; border-radius: 12px; padding: 24px; margin-bottom: 16px; }
-        。btn { display: inline-block; background: #000; color: #fff; padding: 14px 32px; border-radius: 25px; text-decoration: none; font-weight: 600; margin-top: 10px; }
-        。footer { text-align: center; font-size: 13px; color: #86868b; margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px; }
-        。footer a { color: var(--accent); text-decoration: none; padding: 0 10px; }
+        /* 修正后的 CSS 选择器 */
+        .header { background: #000; color: #fff; padding: 70px 20px; text-align: center; }
+        .container { max-width: 700px; margin: -40px auto 60px; background: #fff; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); padding: 40px; }
+        .section { margin-bottom: 40px; }
+        h2 { font-size: 24px; border-bottom: 1px solid #eee; padding-bottom: 12px; margin-bottom: 20px; font-weight: 700; }
+        h3 { font-size: 18px; margin-top: 20px; color: #000; }
+        .card { background: #f5f5f7; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+        .btn { display: inline-block; background: #000; color: #fff; padding: 14px 32px; border-radius: 25px; text-decoration: none; font-weight: 600; margin-top: 10px; }
+        .faq-item { margin-bottom: 15px; border-bottom: 1px solid #f0f0f0; padding-bottom: 15px; }
+        .faq-q { font-weight: 600; color: #007aff; margin-bottom: 5px; }
+        .faq-a { font-size: 15px; color: #444; }
+        .footer { text-align: center; font-size: 13px; color: #86868b; margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px; }
+        .footer a { color: var(--accent); text-decoration: none; padding: 0 10px; }
     </style>
 </head>
 <body>
-    <div class="header"><h1>Fickr Support</h1></div>
+    <div class="header">
+        <h1>Fickr Support Portal</h1>
+        <p>Aesthetic Lifestyle & Visual Sanctuary</p>
+    </div>
+
     <div class="container">
+        <!-- 核心联系区域 -->
         <div class="section">
-            <h2>Technical Support</h2>
+            <h2>Direct Assistance</h2>
             <div class="card">
-                <p>If you have any inquiries regarding your aesthetic compositions, muse insights, or coin balance, our technical team is here to assist.</p>
+                <p>Welcome to the Fickr support center. If you encounter any technical issues, billing discrepancies, or have creative suggestions, our team is ready to listen.</p>
                 <a href="mailto:lovantiep9088@icloud.com" class="btn">Send Support Email</a>
+                <p style="font-size: 12px; color: #888; margin-top: 15px;">* Expect a response within 24-48 hours.</p>
             </div>
         </div>
+
+        <!-- 功能 FAQ 区域 -->
         <div class="section">
-            <h2>IAP & Restore</h2>
-            <p><strong>Restore Purchases:</strong> If you've reinstalled Fickr, you can re-sync your Coin Balance via the 'Restore Purchases' button in the boutique UI.</p>
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <p class="faq-q">How do I restore my In-App Purchases?</p>
+                <p class="faq-a">If you reinstall the app or switch devices, go to the <strong>Settings</strong> or <strong>Coin Boutique</strong> and tap the 'Restore Purchases' button. This will re-sync your balance linked to your Apple ID.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-q">Where are my exported Moodboards saved?</p>
+                <p class="faq-a">Exported cards from the Moodboard Lab are saved directly to your device's <strong>Photo Library</strong>. Ensure you have granted "Photos" permission to the app.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-q">How to re-take the Aesthetic IQ Test?</p>
+                <p class="faq-a">Your persona evolves. You can re-initiate the diagnostic test any time from the <strong>Profile Section</strong> to get fresh muse recommendations.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-q">Issues with Color Story generation?</p>
+                <p class="faq-a">If the algorithm fails to extract a palette, ensure your image is in a standard format (JPG/PNG). Clearing the app cache in Settings can also help resolve processing glitches.</p>
+            </div>
         </div>
+
+        <!-- 进阶指南区域 -->
+        <div class="section">
+            <h2>User Guide & Best Practices</h2>
+            <div class="card" style="background: #fff; border: 1px solid #eee;">
+                <h3>✨ Moodboard Lab</h3>
+                <p>Select up to 4 images from your local captures or our curated muse gallery. Use the layout engine to create stunning 2x2 grids for your visual diary.</p>
+                
+                <h3>🎨 Creative Studio</h3>
+                <p>Combine quotes with aesthetic backdrops. You can customize fonts and overlay opacity to match your current vibe before exporting high-resolution cards.</p>
+            </div>
+        </div>
+
+        <!-- 页脚保留 -->
         <div class="footer">
             <p>© 2026 Fickr Aesthetic Insights. All rights reserved.</p>
             <p>
