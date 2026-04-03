@@ -3,29 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fickr Aesthetic Studio - Support</title>
+    <title>Fickr Aesthetic Studio | Technical Support</title>
     <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 20px; color: #333; }
-        h1 { color: #000; border-bottom: 2px solid #000; padding-bottom: 10px; }
-        .contact-box { background: #f9f9f9; padding: 20px; border-radius: 12px; border: 1px solid #eee; }
-        a { color: #007aff; text-decoration: none; }
-        .footer { margin-top: 50px; font-size: 12px; color: #999; }
+        :root { --primary: #000; --accent: #007aff; --bg: #ffffff; --text: #1d1d1f; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; color: var(--text); background: var(--bg); margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
+        .header { background: #000; color: #fff; padding: 60px 20px; text-align: center; }
+        .header h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; margin: 0; }
+        .container { max-width: 700px; margin: -40px auto 60px; background: #fff; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); padding: 40px; }
+        .section { margin-bottom: 30px; }
+        .section h2 { font-size: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
+        .card { background: #f5f5f7; border-radius: 12px; padding: 20px; margin-bottom: 15px; }
+        .contact-btn { display: inline-block; background: var(--primary); color: #fff; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; margin-top: 10px; }
+        .contact-btn:hover { opacity: 0.8; }
+        .faq-item { margin-bottom: 15px; }
+        .faq-q { font-weight: 600; color: #000; }
+        .footer { text-align: center; font-size: 13px; color: #86868b; margin-bottom: 40px; }
+        a { color: var(--accent); text-decoration: none; }
     </style>
 </head>
 <body>
-    <h1>Fickr Support Center</h1>
-    <p>Welcome to the Fickr Aesthetic Studio support portal. We are committed to providing a premium experience for our creative community.</p>
+    <div class="header">
+        <h1>Fickr Support Studio</h1>
+    </div>
     
-    <div class="contact-box">
-        <h3>Contact Us</h3>
-        <p>For technical assistance, billing inquiries, or aesthetic feedback, please contact our support team:</p>
-        <p><strong>Support Email:</strong> <a href="mailto:lovantiep9088@icloud.com">lovantiep9088@icloud.com</a></p>
+    <div class="container">
+        <div class="section">
+            <h2>Get in Touch</h2>
+            <p>Experiencing technical issues or have inquiries about your aesthetic journey? Our creative support team is here to assist you.</p>
+            <div class="card">
+                <p><strong>Primary Support Email:</strong><br>lovantiep9088@icloud.com</p>
+                <a href="mailto:lovantiep9088@icloud.com" class="contact-btn">Send us an Email</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Billing & In-App Purchases</h2>
+            <div class="faq-item">
+                <p class="faq-q">How do I restore my coin balance?</p>
+                <p>Coins are safely stored in your local enclave. If you've reinstalled the app, use the "Restore Purchases" button in the Coin Boutique to re-sync your balance.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">Did not receive coins after payment?</p>
+                <p>Please wait up to 5 minutes for the Optical Algorithm to sync. If coins haven't appeared, send your Order Receipt to the email above and we'll restore them manually within 24 hours.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Support</h2>
+            <p>For app crashes, UI glitches, or "Aesthetic Archive" persistence issues, please include your <strong>Device Model</strong> and <strong>iPadOS Version</strong> in your support request for faster resolution.</p>
+        </div>
     </div>
 
-    <h3>Frequently Asked Questions</h3>
-    <p><strong>Q: How do I save my moodboards?</strong><br>A: Use the 'Export' button in the Studio. Your composition will be saved to your system Photo Library and our internal archive.</p>
-    <p><strong>Q: Coins not appearing after purchase?</strong><br>A: Please ensure you have a stable connection. If issues persist, email us with your Order ID for manual restoration.</p>
-
-    <div class="footer">© 2026 Fickr Creative. All rights reserved.</div>
+    <div class="footer">
+        <p>© 2026 Fickr Aesthetic Insights. All rights reserved.</p>
+        <p><a href="https://flickr-explore.github.io/Fickr/">Privacy Policy</a> | <a href="https://flickr-explore.github.io/Fickr/">Terms of Service</a></p>
+    </div>
 </body>
 </html>
